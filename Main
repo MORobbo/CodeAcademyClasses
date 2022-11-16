@@ -1,0 +1,15 @@
+using System;
+
+namespace BasicClasses
+{
+  class Program
+  {
+    static void Main(string[] args)
+    {
+      Forest f = new Forest("Amazon");  //Would print amazon but refer to the Name property
+      Console.WriteLine(f.Trees);	//Would print 0
+      f.Grow();
+      Console.WriteLine(f.Trees);	//would print 30
+    }
+  }
+}
